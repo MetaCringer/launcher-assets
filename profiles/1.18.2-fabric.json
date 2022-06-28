@@ -130,7 +130,7 @@
   "servers": [
     {
       "name": "Бавовняний",
-      "serverAddress": "horny-gnomes.pp.ua",
+      "serverAddress": "localhost",
       "serverPort": 25565,
       "isDefault": true,
       "socketPing": true
