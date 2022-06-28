@@ -1,0 +1,9 @@
+{
+    "createAccountURL": "https://localhost:9000/",
+    "forgotPassURL": "https://localhost:9000/",
+    "hastebinServer": "https://hastebin.com",
+    "forceDownloadJava": false,
+    "javaList": {},
+    "lazy": true,
+    "disableOfflineMode": false
+  }

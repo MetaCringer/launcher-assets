@@ -1,0 +1,155 @@
+{
+  "title": "1.18.2-fabric",
+  "uuid": "b55da36f-89bd-49b1-ac32-8c1403ad768b",
+  "version": "1.18.2",
+  "info": "Інформація о сервері",
+  "dir": "1.18.2-fabric",
+  "sortIndex": 0,
+  "assetIndex": "1.18.2",
+  "assetDir": "asset1.18.2",
+  "update": [
+    "servers.dat"
+  ],
+  "updateExclusions": [],
+  "updateShared": [],
+  "updateVerify": [
+    "libraries",
+    "natives",
+    "mods",
+    "minecraft.jar",
+    "forge.jar",
+    "liteloader.jar"
+  ],
+  "updateOptional": [
+    {
+      "actions": [
+        {
+          "files": {
+            "libraries/org/lwjgl/lwjgl-stb/3.2.1": "",
+            "libraries/org/lwjgl/lwjgl-tinyfd/3.2.1": "",
+            "libraries/org/lwjgl/lwjgl-opengl/3.2.1": "",
+            "libraries/org/lwjgl/lwjgl-jemalloc/3.2.1": "",
+            "libraries/org/lwjgl/lwjgl-openal/3.2.1": "",
+            "libraries/org/lwjgl/lwjgl-glfw/3.2.1": "",
+            "libraries/org/lwjgl/lwjgl/3.2.1": ""
+          },
+          "type": "file"
+        }
+      ],
+      "mark": false,
+      "visible": false,
+      "name": "MacLwjgl",
+      "triggersList": [
+        {
+          "os": "MACOSX",
+          "required": false,
+          "inverted": false,
+          "type": "os"
+        }
+      ],
+      "subTreeLevel": 1,
+      "isPreset": false,
+      "limited": false
+    },
+    {
+      "actions": [
+        {
+          "files": {
+            "libraries/org/lwjgl/lwjgl/3.2.2": "",
+            "libraries/org/lwjgl/lwjgl-stb/3.2.2": "",
+            "libraries/org/lwjgl/lwjgl-tinyfd/3.2.2": "",
+            "libraries/org/lwjgl/lwjgl-opengl/3.2.2": "",
+            "libraries/org/lwjgl/lwjgl-jemalloc/3.2.2": "",
+            "libraries/org/lwjgl/lwjgl-openal/3.2.2": "",
+            "libraries/org/lwjgl/lwjgl-glfw/3.2.2": ""
+          },
+          "type": "file"
+        }
+      ],
+      "mark": false,
+      "visible": false,
+      "name": "NonMacLwjgl",
+      "triggersList": [
+        {
+          "os": "MACOSX",
+          "required": false,
+          "inverted": true,
+          "type": "os"
+        }
+      ],
+      "subTreeLevel": 1,
+      "isPreset": false,
+      "limited": false
+    },
+    {
+      "actions": [
+        {
+          "args": [
+            "-XstartOnFirstThread"
+          ],
+          "type": "jvmArgs"
+        }
+      ],
+      "mark": false,
+      "visible": false,
+      "name": "MacOSArgs",
+      "triggersList": [
+        {
+          "os": "MACOSX",
+          "required": false,
+          "inverted": false,
+          "type": "os"
+        }
+      ],
+      "subTreeLevel": 1,
+      "isPreset": false,
+      "limited": false
+    }
+  ],
+  "jvmArgs": [
+    "-XX:+DisableAttachMechanism",
+    "-XX:+UseG1GC",
+    "-XX:+UnlockExperimentalVMOptions",
+    "-XX:G1NewSizePercent\u003d20",
+    "-XX:MaxGCPauseMillis\u003d50",
+    "-XX:G1HeapRegionSize\u003d32M",
+    "-Djava.library.path\u003dnatives",
+    "-Dfml.ignorePatchDiscrepancies\u003dtrue",
+    "-Dfml.ignoreInvalidMinecraftCertificates\u003dtrue"
+  ],
+  "classPath": [
+    "libraries",
+    "minecraft.jar"
+  ],
+  "modulePath": [],
+  "modules": [],
+  "altClassPath": [],
+  "clientArgs": [],
+  "compatClasses": [],
+  "properties": {},
+  "servers": [
+    {
+      "name": "Бавовняний",
+      "serverAddress": "horny-gnomes.pp.ua",
+      "serverPort": 25565,
+      "isDefault": true,
+      "socketPing": true
+    }
+  ],
+  "securityManagerConfig": "LAUNCHER",
+  "classLoaderConfig": "LAUNCHER",
+  "signedClientConfig": "NONE",
+  "runtimeInClientConfig": "NONE",
+  "recommendJavaVersion": 17,
+  "minJavaVersion": 17,
+  "maxJavaVersion": 999,
+  "warnMissJavaVersion": true,
+  "settings": {
+    "ram": 0,
+    "autoEnter": true,
+    "fullScreen": false
+  },
+  "updateFastCheck": true,
+  "limited": false,
+  "mainClass": "net.fabricmc.loader.launch.knot.KnotClient"
+}
