@@ -129,7 +129,14 @@
   "properties": {},
   "servers": [
     {
-      "name": "Бавовняний",
+      "name": "slave1",
+      "serverAddress": "localhost",
+      "serverPort": 25565,
+      "isDefault": true,
+      "socketPing": true
+    },
+    {
+      "name": "slave2",
       "serverAddress": "localhost",
       "serverPort": 25565,
       "isDefault": true,
