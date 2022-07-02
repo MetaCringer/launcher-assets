@@ -129,14 +129,14 @@
   "properties": {},
   "servers": [
     {
-      "name": "slave1",
+      "name": "slave0",
       "serverAddress": "localhost",
       "serverPort": 25565,
       "isDefault": true,
       "socketPing": true
     },
     {
-      "name": "slave2",
+      "name": "slave1",
       "serverAddress": "localhost",
       "serverPort": 25565,
       "isDefault": true,
